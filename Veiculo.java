@@ -1,5 +1,4 @@
-public class Classes {
-    class Veiculo{
+public class Veiculo{
          private String marca;
          private String modelo;
          private int ano;
@@ -11,6 +10,13 @@ public class Classes {
         this.ano = 0;
         this.placa = "";
         }
+
+    public Veiculo(String marca, String modelo, int ano, String placa) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.placa = placa;
+    }
 
     public String getMarca() {
         return marca;
@@ -49,4 +55,3 @@ public class Classes {
 
 
     }
-}
