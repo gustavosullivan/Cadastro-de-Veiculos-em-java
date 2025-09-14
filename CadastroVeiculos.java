@@ -34,11 +34,12 @@ public class CadastroVeiculos {
                     break;
                 case 3:
                     removeVeiculo();
-                    System.out.println("Presione Enter para continuar");
+                    System.out.println("Pressione Enter para continuar");
                     scan.nextLine();
                     break;
                 case 4:
                     pesquisaVeiculo();
+                    System.out.println("Pressione Enter para continuar");
                     scan.nextLine();
                     break;
                 case 0:
@@ -123,7 +124,6 @@ public class CadastroVeiculos {
         if (!encontrado) {
             System.out.println("Nenhum veículo encontrado com a placa: " + pesquisaPlaca);
         }
-        System.out.println("Pressione Enter para continuar");
     }
 
     static void pesquisaPorModelo() {
@@ -139,6 +139,5 @@ public class CadastroVeiculos {
         if (!encontrado) {
             System.out.println("Nenhum veículo encontrado.");
         }
-        System.out.println("Pressione Enter para continuar");
     }
 }
