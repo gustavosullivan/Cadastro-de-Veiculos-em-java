@@ -71,7 +71,7 @@ public class CadastroVeiculos {
     static void listaVeiculos() {
         System.out.println("==== Veículos cadastrados ====");
         for (Veiculo veiculo : veiculos) {
-            System.out.println(veiculo.toString());
+            System.out.println(veiculo);
         }
     }
 
@@ -117,7 +117,7 @@ public class CadastroVeiculos {
         for (Veiculo veiculo : veiculos) {
             if (veiculo.getPlaca().equalsIgnoreCase(pesquisaPlaca)) {
                 System.out.println("Veículos encontrados: ");
-                System.out.println(veiculo.toString());
+                System.out.println(veiculo);
                 encontrado = true;
             }
         }
@@ -132,7 +132,7 @@ public class CadastroVeiculos {
         System.out.println("Veículos encontrados: ");
         for (Veiculo veiculo : veiculos) {
             if (veiculo.getModelo().contains(pesquisaModelo)) {
-                System.out.println(veiculo.toString());
+                System.out.println(veiculo);
                 encontrado = true;
             }
         }
